@@ -1,0 +1,9 @@
+<p>home works!</p>
+<input type="number" [(ngModel)]="inputValue" placeholder="Days" />
+<button (click)="fetchData()">Load</button>
+<table>
+    <tr *ngFor="let post of posts">
+        <td>{{ post.data }}</td>
+        <td>{{ post.cena }}</td>
+    </tr>
+</table>
